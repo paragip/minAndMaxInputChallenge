@@ -27,8 +27,13 @@ public class minAndMaxInputChallenge {
         }
         scanner.close();
 
-        System.out.println("min: " + min);
-        System.out.println("max: " + max);
+        if (min == Integer.MAX_VALUE || max == Integer.MIN_VALUE ){
+            System.out.println("error");
+        } else {
+            System.out.println("min: " + min);
+            System.out.println("max: " + max);
+        }
+
     }
 
 }
